@@ -1,0 +1,13 @@
+### Kiểm tra server còn sống không
+GET http://localhost:8080/healthz
+
+### Tạo một URL rút gọn mới
+POST http://localhost:8080/api/shorten
+Content-Type: application/json
+
+{
+  "url": "https://www.anthropic.com/claude"
+}
+
+### Truy cập mã rút gọn (thay YOUR_CODE bằng mã nhận được ở trên)
+GET http://localhost:8080/YOUR_CODE
